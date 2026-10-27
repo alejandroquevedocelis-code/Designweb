@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Delius&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="row px-3 align-items-center">
+		<img src="img/Logo.png" alt="Logo de la compañia" class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-1">
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light col-8 col-sm-8 col-md-8 col-lg-10 col-xl-11">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav ms-auto">
+		        <li class="nav-item">
+		          <a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="contactenos.html">Contactenos</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	<main>
+		<section class="mb-5">
+			<img src="img/portada2.jpg" alt="Portada Parqueadero" class="w-100">
+		</section>
+
+		<section class="container my-5">
+			<h1 class="text-center mb-4">Contactenos</h1>
+			
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-8 col-lg-6">
+					<form>
+						<div class="mb-3">
+							<label for="nombre" class="form-label text-muted small fw-bold">NOMBRE COMPLETO *</label>
+							<input type="text" class="form-control bg-light" id="nombre" placeholder="Escriba su nombre" required>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-6 mb-3">
+								<label for="email" class="form-label text-muted small fw-bold">CORREO ELECTRÓNICO *</label>
+								<input type="email" class="form-control bg-light" id="email" placeholder="correo@ejemplo.com" required>
+							</div>
+							<div class="col-12 col-md-6 mb-3">
+								<label for="telefono" class="form-label text-muted small fw-bold">TELÉFONO</label>
+								<input type="tel" class="form-control bg-light" id="telefono" placeholder="Número de teléfono">
+							</div>
+						</div>
+						<div class="mb-3">
+							<label for="servicio" class="form-label text-muted small fw-bold">SERVICIO REQUERIDO *</label>
+							<select class="form-select bg-light" id="servicio" required>
+								<option selected disabled>Seleccione una opción</option>
+								<option value="abierto">Parqueadero Abierto</option>
+								<option value="techado">Parqueadero Techado</option>
+								<option value="camiones">Camiones</option>
+								<option value="motos">Motos</option>
+								<option value="lavadero">Lavadero</option>
+							</select>
+						</div>
+						<div class="mb-4">
+							<label for="mensaje" class="form-label text-muted small fw-bold">MENSAJE</label>
+							<textarea class="form-control bg-light" id="mensaje" rows="4" placeholder="Escriba su mensaje aquí..."></textarea>
+						</div>
+						<button type="submit" class="btn btn-dark w-100 py-2 rounded-pill">Enviar &rarr;</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Pie de página -->
+	<footer class="footer-parqueadero">
+	    <div class="container">
+	        <div class="row text-center text-white py-5">
+	            <div class="col-12 col-md-6 mb-4 mb-md-0">
+	                <h3 class="h4 mb-3">Contáctanos:</h3>
+	                <p class="mb-0">
+	                    Carrera 4 No. 1 - 55 - Altico de<br>
+	                    Soacha Cund. - Colombia<br>
+	                    (311) 221 34 50
+	                </p>
+	            </div>
+	            <div class="col-12 col-md-6">
+	                <h3 class="h4 mb-3">Hora de Atención:</h3>
+	                <p class="mb-0">
+	                    Domingo a Domingo<br>
+	                    6:00 a.m. - 10:00 p.m.
+	                </p>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
